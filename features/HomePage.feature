@@ -34,3 +34,12 @@ Scenario 3: GUI - Expandir um post que foi deletado.
       When: I select this post title.
       Then: I can see a warning explaining that this post does not exist.. 
        And: I am at the “Home” page.
+
+Scenario 4: GUI - Usuário não cadastrado: Tentar visualizar os próprios posts
+   Given: I am at the “Home” page.
+     And: I am not logged in.
+     And: I can all the post from all users sorted by “Mais Recente”    
+    When: I select to filter by “Only my posts”.
+    Then: I’m still at the “Home” Page
+     And: I can see a warning that only logged users can see their posts.
+     And: I still can see all the post from all users sorted by “Mais Recente”
