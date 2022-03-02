@@ -43,3 +43,4 @@ Scenario 4: GUI - Usuário não cadastrado: Tentar visualizar os próprios posts
     Then: I’m still at the “Home” Page
      And: I can see a warning that only logged users can see their posts.
      And: I still can see all the post from all users sorted by “Mais Recente”
+     And: I am redirected to "login" page.
