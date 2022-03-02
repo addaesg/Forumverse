@@ -60,5 +60,4 @@ Scenario 6: GUI - Expandir um post.
       When: I select this post title.
       Then: I’m redirected to “A NA’VI se tornará um time     
             Russo?” page. 
-       And: I can now see the whole post, its information(“topic”, 
-           “creator”, “date/hour”), its commentaries.
+       And: I can now see the whole post, its information(“topics”, “creator”, “date/hour”), its commentaries.
