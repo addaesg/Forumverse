@@ -51,3 +51,13 @@ Scenario 5: GUI - Usuário cadastrado: Tentar visualizar os próprios posts
     When: I select to filter by “Only my posts”.
     Then: I’m still at the “Home” Page
      And: I can see all the posts made by "user00"
+
+Scenario 6: GUI - Expandir um post.
+     Given: I am at the “Home” page.
+       And: I can see the post title “A NA’VI se tornará um time     
+           russo?”.
+      When: I select this post title.
+      Then: I’m redirected to “A NA’VI se tornará um time     
+            Russo?” page. 
+       And: I can now see the whole post, its information(“topic”, 
+           “creator”, “date/hour”), its commentaries.
