@@ -63,6 +63,7 @@ Scenario 6: GUI - Expandir um post.
        And: I can now see the whole post, its information(“topics”, “creator”, “date/hour”), its commentaries.
 
 
-/* q14 */
-/*oie 
-:D */
+scenario: alarme falso
+    Given: Eu não aguento mais essa atividade
+    When:  Enviar explaining
+    Then: Vo jogar
