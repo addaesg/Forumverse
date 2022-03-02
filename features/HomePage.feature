@@ -64,9 +64,5 @@ Scenario 6: GUI - Expandir um post.
 
 
 /* q14 */
-/*oie */
-
-
-
-
-
+/*oie 
+:D */
