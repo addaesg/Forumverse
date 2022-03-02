@@ -43,3 +43,11 @@ Scenario 4: GUI - Usuário não cadastrado: Tentar visualizar os próprios posts
     Then: I’m still at the “Home” Page
      And: I can see a warning that only logged users can see their posts.
      And: I still can see all the post from all users sorted by “Mais Recente”
+
+Scenario 5: GUI - Usuário cadastrado: Tentar visualizar os próprios posts
+   Given: I am at the “Home” page.
+     And: I am logged in as "user00".
+     And: I can all the post from all users sorted by “Mais Recente”    
+    When: I select to filter by “Only my posts”.
+    Then: I’m still at the “Home” Page
+     And: I can see all the posts made by "user00"
