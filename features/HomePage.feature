@@ -44,3 +44,21 @@ Scenario 4: GUI - Usuário não cadastrado: Tentar visualizar os próprios posts
      And: I can see a warning that only logged users can see their posts.
      And: I still can see all the post from all users sorted by “Mais Recente”
      And: I am redirected to "login" page.
+
+Scenario 5: GUI - Usuário cadastrado: Tentar visualizar os próprios posts
+   Given: I am at the “Home” page.
+     And: I am logged in as "user00".
+     And: I can all the post from all users sorted by “Mais Recente”    
+    When: I select to filter by “Only my posts”.
+    Then: I’m still at the “Home” Page
+     And: I can see all the posts made by "user00"
+
+Scenario 6: GUI - Expandir um post.
+     Given: I am at the “Home” page.
+       And: I can see the post title “A NA’VI se tornará um time     
+           russo?”.
+      When: I select this post title.
+      Then: I’m redirected to “A NA’VI se tornará um time     
+            Russo?” page. 
+       And: I can now see the whole post, its information(“topic”, 
+           “creator”, “date/hour”), its commentaries.
