@@ -27,3 +27,10 @@ Scenario 2: GUI - despor posts do menu inicial por ordem “Mais recente”
             Taiwan” 
        And: I can see that the third post is “Putin invadiu a Ucrânia.”
        And: I’m still at the “Home” page.
+
+Scenario 3: GUI - Expandir um post que foi deletado.
+     Given: I am at the “Home” page.
+       And: I can see the post title “A NA’VI se tornará um time russo?”.
+      When: I select this post title.
+      Then: I can see a warning explaining that this post does not exist.. 
+       And: I am at the “Home” page.
